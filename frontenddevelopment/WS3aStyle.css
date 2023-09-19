@@ -1,0 +1,77 @@
+html{
+    width: 1000px;
+    height: 1300px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: #c46c6c;
+    z-index: 2;
+}
+header h3 {
+}
+header div {
+}
+header nav {
+}
+header aside {
+}
+main {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    background-color: #86d18a;
+    z-index: 1;
+}
+main section {
+    background-color: #b9e4a5;
+}
+main article {
+    background-color: #f2f2f2;
+    margin: 4% 10% 4% 10%;
+    height: 200px;
+}
+article:nth-child(3n+2) {
+    background-color: #bcbcbc;
+}
+article:nth-child(3n+3) {
+    background-color: #9b9a9a;
+}
+main aside {
+    width: 28%;
+    background-color: #f2f2f2;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #8bc7ec;
+    z-index: 1;
+}
+#LeftSection{
+    float: left;
+    width: 49%;
+    height: 100%;
+}
+#RightAside{
+    float: right;
+    width: 49%;
+    height: 100%;
+    margin: 0;
+}
+.articlesLeft{
+    width: 60%;
+}
+.articlesRight{
+    width: 40%;
+}
+.articlesRightRight{
+    width: 50%;
+    position: relative;
+    right: -30%;
+}

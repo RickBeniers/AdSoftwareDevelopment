@@ -2,59 +2,7 @@
 <html>
 <head>
 	<title>Voorbeeld van het gebruik van positionering</title>
-	<style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            position: sticky;
-            top: 0px;
-            width: 100%;
-            background-color: #c46c6c;
-            z-index: 2;
-        }
-        header h3 {
-        }
-        header div {
-        }
-        header nav {
-        }
-        header aside {
-        }
-        main {
-            position: relative;
-            top: 10px;
-            width: 100%;
-            background-color: #86d18a;
-            z-index: 1;
-        }
-        main section {
-            width: 70%;
-            background-color: #b9e4a5;
-        }
-        main article {
-            width: 40%;
-            background-color: #f2f2f2;
-        }
-        article:nth-child(3n+2) { 
-            background-color: #bcbcbc;
-        }
-        article:nth-child(3n+3) { 
-            background-color: #9b9a9a;
-        }
-        main aside {
-            width: 28%;
-            background-color: #f2f2f2;
-        }
-        footer {
-            position: fixed;
-            bottom: 0px;
-            width: 100%;
-            background-color: #8bc7ec;
-            z-index: 1;
-        }
-	</style>
+    <link rel="stylesheet" href="WS3aStyle.css?v=02">
 </head>
 <body>
     <header>
@@ -66,26 +14,62 @@
     </header>
     <main>
         <h2>Heading main</h2>
-        <section>Section
+        <section id="LeftSection">Section
             <article><h3>Heading 3 in Article</h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>Debitis quidem aliquid, natus porro ut officia asperiores veritatis sunt iste similique doloremque dolorem, sapiente esse ullam quod nulla! Esse, nam?<BR> Voluptas.
             </article>
-            <article><h3>Heading 3 in Article</h3>
+            <article class="articlesLeft"><h3>Heading 3 in Article</h3>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.<BR>Aspernatur, sunt possimus quia magnam corporis expedita laboriosam omnis hic veniam autem porro provident, mollitia ad, tenetur eaque cupiditate nisi illo cumque!
             </article>
-            <article><h3>Heading 3 in Article</h3>
+            <article class="articlesLeft"><h3>Heading 3 in Article</h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>Perferendis libero ducimus consequuntur!<BR>Asperiores voluptates ex sit quasi quisquam exercitationem eos natus, vel expedita dolorem repudiandae, odit deserunt rem nam sapiente.
+            </article>
+            <article class="articlesRight"><h3>Heading 3 in Article</h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.<BR>Necessitatibus voluptatum vel possimus quasi consequuntur perferendis, rem repudiandae omnis enim ad, libero sint illum iusto quae iste magni, quaerat unde! Vel?
             </article>
             <article><h3>Heading 3 in Article</h3>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.<BR>Necessitatibus voluptatum vel possimus quasi consequuntur perferendis, rem repudiandae omnis enim ad, libero sint illum iusto quae iste magni, quaerat unde! Vel?
             </article>
+            <article class="articlesRight"><h3>Heading 3 in Article</h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.<BR>Necessitatibus voluptatum vel possimus quasi consequuntur perferendis, rem repudiandae omnis enim ad, libero sint illum iusto quae iste magni, quaerat unde! Vel?
+            </article>
         </section>
-        <aside><h3>Heading 3 in Aside</h3>
+        <aside id="RightAside"><h3>Heading 3 in Aside</h3>
             <section>Section in Aside
                 <article>Article in Aside
                     <h4>Heading 4 in Article</h4>
                     <p>Paragraph in Article<BR>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>A ipsam soluta culpa fugit odit facilis, temporibus non officiis saepe nobis animi quidem nulla voluptatem aperiam in debitis rem earum reprehenderit!
+                    </p>
+                </article>
+                <article class="articlesRightRight">Article in Aside
+                    <h4>Heading 4 in Article</h4>
+                    <p>Paragraph in Article<BR>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>A ipsam soluta culpa fugit odit facilis, temporibus non officiis saepe nobis animi quidem nulla voluptatem aperiam in debitis rem earum reprehenderit!
+                    </p>
+                </article>
+                <article class="articlesRightRight">Article in Aside
+                    <h4>Heading 4 in Article</h4>
+                    <p>Paragraph in Article<BR>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>A ipsam soluta culpa fugit odit facilis, temporibus non officiis saepe nobis animi quidem nulla voluptatem aperiam in debitis rem earum reprehenderit!
+                    </p>
+                </article>
+                <article>Article in Aside
+                    <h4>Heading 4 in Article</h4>
+                    <p>Paragraph in Article<BR>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>A ipsam soluta culpa fugit odit facilis, temporibus non officiis saepe nobis animi quidem nulla voluptatem aperiam in debitis rem earum reprehenderit!
+                    </p>
+                </article>
+                <article>Article in Aside
+                    <h4>Heading 4 in Article</h4>
+                    <p>Paragraph in Article<BR>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>A ipsam soluta culpa fugit odit facilis, temporibus non officiis saepe nobis animi quidem nulla voluptatem aperiam in debitis rem earum reprehenderit!
+                    </p>
+                </article>
+                <article>Article in Aside
+                    <h4>Heading 4 in Article</h4>
+                    <p>Paragraph in Article<BR>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<BR>A ipsam soluta culpa fugit odit facilis, temporibus non officiis saepe nobis animi quidem nulla voluptatem aperiam in debitis rem earum reprehenderit!
                     </p>
                 </article>
             </section>
