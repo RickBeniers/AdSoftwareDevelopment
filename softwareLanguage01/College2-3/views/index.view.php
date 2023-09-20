@@ -13,7 +13,8 @@
         <div class="row">
             <div class="offset-2 col-8">
                 <h1>Hello, ADSD!</h1>
-                <p><?= $fam_hoeksema[0] ?></p>
+                <p><?= $fam_hoeksema[0]; ?></p>
+
             </div>
         </div>
     </div>
