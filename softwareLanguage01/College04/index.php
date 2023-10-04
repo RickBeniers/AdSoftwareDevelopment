@@ -6,8 +6,24 @@
  * POST
  */
 
+$App = require 'private.php';
+$conn = $App['database'];
 
+$basicRoute = "/softwareLanguage01/College04";
+$routes = [
+    $basicRoute."/" => "controllers/index.php",
+    $basicRoute."/about" => "controllers/about.php",
+    $basicRoute."/details" => "controllers/details.php",
+    $basicRoute."/contact" => "controllers/contact.php"
+];
+//$routes[$_SERVER['REQUEST_URI']]. "<br>";
 
+if(array_key_exists($_SERVER['REQUEST_URI'], $routes)){
+    require $routes[$_SERVER['REQUEST_URI']];
+}else{
+    echo "Error 404.";
+}
+//echo $_SERVER['REQUEST_URI'];
 /**
  * Routing
  * Waar in de applicatie ben je?
@@ -23,10 +39,21 @@
  * - about
  */
 
-
-
-
 /**
  * PDO - connect to database
  *
  */
+$servername = $conn['servername'];
+$username = $conn['username'];
+$password = $conn['password'];
+$dbname = $conn['dbname'];
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+//require 'views/index.view.php';
