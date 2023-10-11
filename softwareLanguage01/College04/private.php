@@ -2,7 +2,7 @@
 return [ "database" => [
             "servername" => "localhost",
             "username" => "root",
-            "password" => "",
+            "password" => "Rick3109",
             "dbname" => "profileApp"
         ],
     ];
